@@ -396,23 +396,26 @@ Bokamoso Tutors is a registered tutoring service provider that offers one-on-one
 <h1>Get In Touch</h1>
     <div class="row">
     <div class="col-md-6">
-        <form class="contact-form">
-        <form action="mailto:info@bokamosotutors.co.za" method="post" enctype="text/plain">
+        <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/f/mdoynzvv" method="post">
+        <fieldset id="fs-frm-inputs">
         <div class="form-group">
-        <input type="text" class="form-control" placeholder="Name">
+        <input type="text" name="name" class="form-control" id="full-name" placeholder="First and Last Name" required="">
         </div>
         <div class="form-group">
-        <input type="number" class="form-control" placeholder="Contact Number">
-        </div>
-        <div class="form-group">
-        <input type="email" class="form-control" placeholder="your.email@address.xyz">
-        </div>
-        <div class="form-group">
-        <textarea class="form-control" rows="4" placeholder="Your Message">
-        </textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Send Message</button>
-        </form></form>
+        <input type="email" name="_replyto" class="form-control" id="email-address" placeholder="your.email@address.xyz" required="">
+            </div>
+            <div class="form-group">
+        <input type="telephone" name="telephone" class="form-control" id="telephone" placeholder="Contact Number">
+            </div>
+            <div class="form-group">
+        <textarea class="form-control" rows="4" cols="20" name="message" id="message" placeholder="Your Message" required=""></textarea>
+            </div>
+        <input type="hidden" name="_subject" id="email-subject" value="Enquiry">
+        </fieldset>
+            <div class="form-group">
+        <button input type="submit" value="Submit" class="btn btn-primary">Send Message</button>
+            </div>
+        </form>
     </div>
     <div class="col-md-6 contact-info">
     <div class="follow"><b>Call</b>: <i class="fa fa-phone-square"></i> (+27)730 561 804 | (+27)733 633 147
